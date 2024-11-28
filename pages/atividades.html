@@ -4,158 +4,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/index.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>VSF | Atividades</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <h1>Vinícius S.F</h1>
-                    <p>Portfólio</p>
+    <header class="w-full text-white p-6">
+        <nav class="flex justify-center gap-10 items-center">
+            <ul class="flex gap-4 items-center">
+                <li class="list-none uppercase">
+                    <h1 class="tracking-widest text-gray-100 text-xl">Vinícius S.F</h1>
+                    <p class="text-gray-100">Portfólio</p>
                 </li>
             </ul>
-            <ul>
-                <li><a href='../index.html'>Início</a></li>
+            <ul class="flex gap-4 items-center">
+                <li class="list-none uppercase">
+                    <a href="../index.html"
+                        class="no-underline text-white transition-colors duration-200 ease-in-out border-b-0 hover:border-b hover:border-white">
+                        Início
+                    </a>
+                </li>
                 <span>|</span>
-                <li><a href='./atividades.html'>Atividades</a></li>
+                <li class="list-none uppercase">
+                    <a href="./atividades.html"
+                        class="no-underline text-white transition-colors duration-200 ease-in-out border-b-0 hover:border-b hover:border-white">
+                        Atividades
+                    </a>
+                </li>
                 <span>|</span>
-                <li><a href='./sobre.html'>Sobre</a></li>
+                <li class="list-none uppercase">
+                    <a href="./evolucao.html"
+                        class="no-underline text-white transition-colors duration-200 ease-in-out border-b-0 hover:border-b hover:border-white">
+                        Evolução
+                    </a>
+                </li>
+                <span>|</span>
+                <li class="list-none uppercase">
+                    <a href="./agradecimentos.html"
+                        class="no-underline text-white transition-colors duration-200 ease-in-out border-b-0 hover:border-b hover:border-white">
+                        Agradecimentos
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <section class="topics">
+
+    <section class="my-6 text-center">
         <nav>
-            <ul>
-                <li><button onclick="showArea('linguagens')">Linguagens</button></li>
-                <li><button onclick="showArea('matematica')">Matemática</button></li>
-                <li><button onclick="showArea('humanas')">Humanas</button></li>
-                <li><button onclick="showArea('natureza')">Natureza</button></li>
-                <li><button onclick="showArea('tecnico')">Técnico</button></li>
+            <ul class="flex justify-center gap-6">
+                <li>
+                    <div
+                        class="max-w-32 bg-transparent items-center justify-center flex border-2 border-gray-300 shadow-lg hover:bg-gray-300 text-gray-300 hover:text-gray-800 duration-300 cursor-pointer active:scale-[0.98]">
+                        <button onclick="showArea('linguagens')" class="uppercase px-8 py-2">Linguagens</button>
+                    </div>
+                </li>
+                <li>
+                    <div
+                        class="max-w-32 bg-transparent items-center justify-center flex border-2 border-gray-300 shadow-lg hover:bg-gray-300 text-gray-300 hover:text-gray-800 duration-300 cursor-pointer active:scale-[0.98]">
+                        <button onclick="showArea('matematica')" class="uppercase px-8 py-2">Matemática</button>
+                    </div>
+                </li>
+                <li>
+                    <div
+                        class="max-w-32 bg-transparent items-center justify-center flex border-2 border-gray-300 shadow-lg hover:bg-gray-300 text-gray-300 hover:text-gray-800 duration-300 cursor-pointer active:scale-[0.98]">
+                        <button onclick="showArea('humanas')" class="uppercase px-8 py-2">Humanas</button>
+                    </div>
+                </li>
+                <li>
+                    <div
+                        class="max-w-32 bg-transparent items-center justify-center flex border-2 border-gray-300 shadow-lg hover:bg-gray-300 text-gray-300 hover:text-gray-800 duration-300 cursor-pointer active:scale-[0.98]">
+                        <button onclick="showArea('natureza')" class="uppercase px-8 py-2">Natureza</button>
+                    </div>
+                </li>
+                <li>
+                    <div
+                        class="max-w-32 bg-transparent items-center justify-center flex border-2 border-gray-300 shadow-lg hover:bg-gray-300 text-gray-300 hover:text-gray-800 duration-300 cursor-pointer active:scale-[0.98]">
+                        <button onclick="showArea('tecnico')" class="uppercase px-8 py-2">Técnico</button>
+                    </div>
+                </li>
             </ul>
         </nav>
     </section>
 
-    <main>
-        <section id="linguagens" class="subject">
-            <div class="activity">
-                <div>
-                    <h2>Revista Literária</h2>
-                    <p>Revista literária contendo obras brasileiras</p>
-                </div>
+    <main class="space-y-8">
+        <section id="linguagens" class="subject hidden">
+            <div class="max-w-4xl mx-auto p-6 bg-white">
+                <h2 class="text-lg font-bold mb-4">Revista Literária</h2>
+                <p>Desenvolvimento de uma revista literária interativa, onde foram abordadas obras literárias clássicas
+                    brasileiras. O projeto envolveu resenhas, artigos e discussões sobre as influências e o impacto das
+                    obras na sociedade brasileira.</p>
                 <iframe width="300" height="400" allowfullscreen
-                    src="https://www.canva.com/design/DAGDPv_Q5gw/EqHlv4l1uQE27M6BvuInxw/view?embed"
-                    frameborder="2"></iframe>
+                    src="https://www.canva.com/design/DAGDPv_Q5gw/EqHlv4l1uQE27M6BvuInxw/view?embed" frameborder="2"
+                    class="mt-4 w-full"></iframe>
             </div>
-
-            <div class="activity">
-                <div>
-                    <h2>Revista Literária</h2>
-                    <p>Revista literária contendo obras brasileiras</p>
-                </div>
-                <iframe width="500" height="300" allowfullscreen src="https://www.youtube.com/embed/0REBsKtJuQ8"
-                    frameborder="2"></iframe>
+            <div class="max-w-4xl mx-auto p-6 bg-white">
+                <h2 class="text-lg font-bold mb-4">Podcast</h2>
+                <p>Criação de um podcast interativo com o escritor João Bandeira, onde discutimos temas como suas obras
+                    e a evolução da literatura brasileira contemporânea.</p>
+                <iframe width="300" height="400" allowfullscreen src="https://www.youtube.com/embed/0REBsKtJuQ8"
+                    frameborder="2" class="mt-4 w-full"></iframe>
             </div>
         </section>
 
-        <section id="matematica" class="subject">
-            <div class="activity">
-                <div>
-                    <h2>Revista Literária</h2>
-                    <p>Revista literária contendo obras brasileiras</p>
-                </div>
+        <section id="matematica" class="subject hidden">
+            <div class="max-w-4xl mx-auto p-6 bg-white">
+                <h2 class="text-lg font-bold mb-4">Matriz</h2>
+                <p>Exploração dos conceitos de matrizes, abordando sua definição, operações e aplicações matemáticas. A
+                    atividade foi focada na teoria, com a apresentação de exemplos gráficos para facilitar o
+                    entendimento.</p>
                 <iframe width="500" height="500" allowfullscreen
-                    src="https://www.canva.com/design/DAGWr5QBKMA/F2lYawIAHrfWNRyDowjR6A/view?embed">
-                </iframe>
+                    src="https://www.canva.com/design/DAGWr5QBKMA/F2lYawIAHrfWNRyDowjR6A/view?embed"
+                    class="mt-4 w-full"></iframe>
             </div>
-            <div class="activity">
-                <div>
-                    <h2>Revista Literária</h2>
-                    <p>Revista literária contendo obras brasileiras</p>
-                </div>
+            <div class="max-w-4xl mx-auto p-6 bg-white">
+                <h2 class="text-lg font-bold mb-4">Bem-estar Digital</h2>
+                <p>Análise do impacto do uso excessivo de smartphones, utilizando conceitos estatísticos para medir e
+                    analisar os hábitos digitais. A atividade abordou a importância de equilibrar a tecnologia com o
+                    bem-estar físico e mental, apresentando dados coletados e reflexões sobre como melhorar a relação
+                    com os dispositivos digitais.</p>
                 <iframe width="500" height="500" allowfullscreen
-                    src="https://www.canva.com/design/DAGWr8RiwDI/lfp9DYorPzAQ1qq6Dtzz9Q/view?embed">
-                </iframe>
+                    src="https://www.canva.com/design/DAGXNBGlLeU/6q_0x5UavIf55tKRTsGyHQ/view?embed"
+                    class="mt-4 w-full"></iframe>
             </div>
         </section>
 
-        <section id="humanas" class="subject">
-            <div class="activity">
-                <div>
-                    <h2>Revista Literária</h2>
-                    <p>Revista literária contendo obras brasileiras</p>
-                </div>
+        <section id="humanas" class="subject hidden">
+            <div class="max-w-4xl mx-auto p-6 bg-white">
+                <h2 class="text-lg font-bold mb-4">Mapa Interativo</h2>
+                <p>Desenvolvimento de um mapa interativo sobre as rotas de imigração dos venezuelanos, com informações
+                    detalhadas sobre as condições de viagem e as dificuldades encontradas ao longo do trajeto. O projeto
+                    teve como objetivo aumentar o entendimento sobre o impacto da migração.</p>
                 <iframe width="600" height="600" allowfullscreen src="https://padlet.com/embed/32pyctbizytebsrg"
-                    frameborder="2"></iframe>
+                    frameborder="2" class="mt-4 w-full"></iframe>
             </div>
-            <div class="activity">
-                <div>
-                    <h2>Revista Literária</h2>
-                    <p>Revista literária contendo obras brasileiras</p>
-                </div>
-                <iframe width="500" height="500" allowfullscreen
-                    src="https://www.canva.com/design/DAGIxhTzXxE/YseQjseVYgnOt_4f0r75Eg/view?embed"
-                    frameborder="2"></iframe>
+            <div class="max-w-4xl mx-auto p-6 bg-white">
+                <h2 class="text-lg font-bold mb-4">O Grande Ditador</h2>
+                <p>Análise crítica do filme "O Grande Ditador", de Charles Chaplin, com foco nos aspectos políticos e
+                    sociais abordados no contexto dos regimes totalitários. A atividade envolveu uma reflexão sobre como
+                    o cinema pode influenciar a percepção crítica dos espectadores em relação aos governos opressores.
+                </p>
+                <iframe width="600" height="600" allowfullscreen
+                    src="https://www.canva.com/design/DAGIxhTzXxE/YseQjseVYgnOt_4f0r75Eg/view?embed" frameborder="2"
+                    class="mt-4 w-full"></iframe>
             </div>
         </section>
 
-        <section id="natureza" class="subject">
-            <div class="activity">
-                <div>
-                    <h2>Revista Literária</h2>
-                    <p>Revista literária contendo obras brasileiras</p>
-                </div>
+        <section id="natureza" class="subject hidden">
+            <div class="max-w-4xl mx-auto p-6 bg-white">
+                <h2 class="text-lg font-bold mb-4">EcoCraft</h2>
+                <p>Criação de um ecossistema e seus componentes no minecraft, essa atividade combinou a criatividade com
+                    a ilustração de termos usados na biologia</p>
                 <iframe width="500" height="400" allowfullscreen src="https://www.youtube.com/embed/zW-JSZltQiM"
-                    frameborder="2"></iframe>
+                    frameborder="2" class="mt-4 w-full"></iframe>
             </div>
-            <div class="activity">
-                <div>
-                    <h2>Revista Literária</h2>
-                    <p>Revista literária contendo obras brasileiras</p>
-                </div>
-                <iframe width="400" height="500" src="https://www.youtube.com/embed/fSERoLFkXXE" title="pilha de limão"
-                    frameborder="0" llowfullscreen></iframe>
-            </div>
-        </section>
-
-        <section id="tecnico" class="subject">
-            <div class="activity">
-                <div>
-                    <h2>Revista Literária</h2>
-                    <p>Revista literária contendo obras brasileiras</p>
-                </div>
-                <img alt="" src="../assets/img/tec1.png">',
-                <img alt="" src="../assets/img/tec2.png">',
-            </div>
-            <div class="activity">
-                <div>
-                    <h2>Revista Literária</h2>
-                    <p>Revista literária contendo obras brasileiras</p>
-                </div>
-                <img alt="" src="../assets/img/tec3.png">',
+            <div class="max-w-4xl mx-auto p-6 bg-white">
+                <h2 class="text-lg font-bold mb-4">Pilha com limão</h2>
+                <p>Criação de uma pilha com limão e moedas, transformando energia química em energia elétrica, colocando
+                    em prática os conhecimentos adquiridos em aula</p>
+                <iframe width="500" height="400" allowfullscreen src="https://www.youtube.com/embed/fSERoLFkXXE"
+                    frameborder="2" class="mt-4 w-full"></iframe>
             </div>
         </section>
 
-        <script src="../assets/js/script.js"></script>
-        <footer class="bg-gray-600 py-6 absolute w-full px-10">
-            <div class="flex items-center justify-between">
-                <p class="text-lg text-gray-300">Entre em contato comigo</p>
-                <ul class="flex flex-wrap justify-center gap-x-8 gap-4">
-                    <li><a href="https://www.linkedin.com/in/apenasovini/" class="text-3xl hover:text-gray-300">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a></li>
-                    <li><a href="https://github.com/ApenasoVini" class="text-3xl hover:text-gray-300">
-                            <i class="fa-brands fa-github"></i>
-                        </a></li>
-                </ul>
+        <section id="tecnico" class="subject hidden">
+            <div class="max-w-4xl mx-auto p-6 bg-white">
+                <h2 class="text-lg font-bold mb-4">Compasio</h2>
+                <p>Trabalho para o curso técnico em desenvolvimento de sistemas
+                    integrado ao ensino médio. A Compasio é uma plataforma proposta para conectar voluntários, ou
+                    pessoas que querem ser voluntários, com ONGs de todo o Brasil, podendo se voluntariar, doar, e
+                    divulgar seus projetos. Desenvolvi o frontend da aplicação, onde pude desenvolver ainda mais meus
+                    conhecimentos de React, CSS, e Axios, além de desenvolver meus conhecimentos nas etapas de modelagem
+                    de software e bancos de dados. Foi um projeto de bastante aprendizado e muito trabalho.
+                </p>
+                <img alt="" src="../assets/img/tec1.png" class="mt-4 w-full">
+                <img alt="" src="../assets/img/tec2.png" class="mt-4 w-full">
             </div>
-        </footer>
+            <div class="max-w-4xl mx-auto p-6 bg-white">
+                <h2 class="text-lg font-bold mb-4">Sonar</h2>
+                <p>Aplicativo de música para o curso técnico em desenvolvimento de sistemas. A
+                    Sonar é um app que utiliza como tecnologias o React Native, ExpressJS e o PostgreSQL.
+                </p>
+                <img alt="" src="../assets/img/tec3.png" class="mt-4">
+            </div>
+        </section>
+    </main>
+    <script src="../assets/js/script.js"></script>
 </body>
 
 </html>
